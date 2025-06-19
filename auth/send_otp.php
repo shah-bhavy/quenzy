@@ -34,12 +34,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'bhavyashahbvs@gmail.com'; // Replace with your Gmail address
-        $mail->Password = 'drxa yrdf cmkq yrwn'; // Replace with your app-specific password
+        $mail->Username = 'YOURMAIL@gmail.com'; // Replace with your Gmail address
+        $mail->Password = 'APP_SPECIFIC_PASSWORD_HERE'; // Replace with your app-specific password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('bhavyashahbvs@gmail.com', 'Quenzy');
+        $mail->setFrom('YOURMAIL@gmail.com', 'Quenzy');
         $mail->addAddress($email);
 
         $mail->isHTML(true);
