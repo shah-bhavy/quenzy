@@ -6,7 +6,7 @@ import mysql.connector
 import datetime
 
 # Replace with your actual API key
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCMqnIUe8vHMU2TShOeduh9aFJpSJ1cr14"
+os.environ["GOOGLE_API_KEY"] = "YOUR_API_KEY_HERE"
 
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 model = genai.GenerativeModel("gemini-1.5-flash")
