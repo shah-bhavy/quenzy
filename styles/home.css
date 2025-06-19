@@ -1,0 +1,245 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../images/Website_Demo.png');
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Container styles */
+.Container {
+    width: 80vw;
+    height: 80vh;
+    margin: 10vh 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #222222e1;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Image container styles */
+.img1 {
+    position: relative; 
+    height: 100%; 
+    width: 100%; 
+}
+
+/* Full-width image styling */
+.img1 img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.2s ease-in-out;
+}
+
+.img1 img:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation bar styles */
+.nav {
+    position: absolute; /* Absolute positioning for overlay */
+    width: 95%; /* Full width */
+    top: 5%;
+    left: 2.5%;
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo styling */
+.img2 {
+    margin-right: auto; 
+}
+
+.img2 img {
+    height: 50px;
+    width: auto; 
+    transition: transform 0.2s ease-in-out;
+}
+
+.img2 img:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation link styling */
+.nav a {
+    color: black; 
+    text-decoration: none; 
+    padding: 0 15px; 
+    font-size: 20px;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav a:hover {
+    color: #3498db;
+}
+
+.nav button{
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid black;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.nav button:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.con{
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.con span{
+    color: rgb(92, 92, 210);
+}
+
+.con2 button {
+    position: absolute;
+    color: black;
+    width: 240px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    border: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.con2 button:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+@media (max-width: 376px) {
+    .Container{
+        height: 1700px;
+        width: 950px;
+        margin: 0;
+    }
+    .con{
+        position: absolute;
+        left: 250px;
+        bottom: 900px;
+    }
+    .con2 button{
+        position: absolute;
+        bottom: 800px;
+        left: 380px;
+    }
+}
+/* Profile Dropdown */
+.profile-container {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    display: inline-block;
+    z-index: 1000; /* Ensure the profile dropdown is on top */
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top:-60px;
+    left: 90px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -5px;
+    background-color: white;
+    width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.user-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.user-email {
+    color: #777;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.rewards {
+    color: gold;
+}
+
+/* Show dropdown on click */
+.show {
+    display: block;
+}
+
+/* Main content styling */
+.Container {
+    position: relative;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.con {
+    margin-top: 150px;
+}
+
+.con2 {
+    margin-top: 20px;
+}
