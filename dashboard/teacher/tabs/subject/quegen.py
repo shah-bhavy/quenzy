@@ -7,7 +7,7 @@ import datetime
 import re # Import regex module for more robust parsing
 
 # Replace with your actual API key
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCMqnIUe8vHMU2TShOeduh9aFJpSJ1cr14" # Ensure this is securely handled in production
+os.environ["GOOGLE_API_KEY"] = "YOUR_API_KEY_HERE" # Ensure this is securely handled in production
 
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 model = genai.GenerativeModel("gemini-1.5-flash")
