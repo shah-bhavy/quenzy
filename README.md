@@ -1,6 +1,6 @@
 # Quenzy Question Paper Generator
 
-![Quenzy Banner](https://via.placeholder.com/1200x400?text=Quenzy+Question+Paper+Generator)
+![Quenzy Banner](https://placehold.co/1200x400?text=Quenzy+Question+Paper+Generator)
 
 Welcome to Quenzy - an AI-powered question paper generator that helps educators create high-quality exams effortlessly. This guide will walk you through the setup and usage of Quenzy.
 
