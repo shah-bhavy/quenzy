@@ -87,7 +87,7 @@ if (($action === 'delete_and_generate') && $chapter_id) {
 // Pass the file_path and chapter_id as arguments// Use the full absolute path to your python.exe executable
 // IMPORTANT: Adjust this path to where Python is actually installed on your system.
 // Example for Windows:
-$py_path = "C:\\Users\\bhavy\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"; // <--- CHANGE THIS LINE
+$py_path = "C:\\Users\\YOUR_USERNAME\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"; // <--- CHANGE THIS LINE
 // Make sure to use double backslashes \\ or forward slashes / for paths on Windows in PHP strings.
 // E.g., "C:/Users/YourUser/AppData/Local/Programs/Python/Python39/python.exe" also works.
 
