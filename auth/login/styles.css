@@ -1,0 +1,805 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure Navbar is on top of other content */
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-right: 20px;
+}
+
+.navbar .nav-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar .nav-button {
+    background-color: #cc5135;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.navbar .nav-button:hover {
+    background-color: #3e8e41;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 100px; /* Adjust if Navbar height changes */
+    bottom: 0;
+    left: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li button {
+    width: 100%;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.sidebar ul li button:hover {
+    background-color: #555;
+}
+
+/* Content Styles */
+.container {
+    display: flex;
+    margin-top: 60px; /* Adjust to avoid overlap with Navbar */
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 220px; /* Adjust if Sidebar width changes */
+}
+
+/* Preview Styles */
+/* Preview Screen Styles */
+.preview-screen {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with opacity */
+    color: white;
+    overflow: auto; /* Enable scroll if needed */
+    z-index: 1000; /* Sit on top */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.preview-content {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust as needed */
+    cursor: pointer;
+}
+
+.navbar-preview {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.close-preview {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.close-preview:hover {
+    background-color: #d32f2f;
+}
+
+.navbar-preview .logo img {
+    height: 50px;
+}
+
+.navbar-preview .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-preview .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-preview .nav-links li {
+    margin-right: 20px;
+}
+
+.navbar-preview .nav-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-preview .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar-preview .nav-button {
+    background-color: #cc5135;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.navbar-preview .nav-button:hover {
+    background-color: #3e8e41;
+}
+
+/* Hero Section Styles */
+.hero-section-alt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #1c1c1e;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button-alt {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #ff9500;
+    color: #1c1c1e;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button-alt:hover {
+    background-color: #cc7a00;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 6px solid #333;
+}
+
+.hero-section-straight {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.feature-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+.feature-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.feature-content {
+    margin-left: 20px;
+}
+
+.feature-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-content p {
+    font-size: 1em;
+}
+
+/* Hero Section Styles - Straight Layout (Hero 2) */
+.hero-section-straight {
+    display: flex;
+    height: 40vh;
+}
+
+.hero-left {
+    flex: 1; /* Ensure the hero-left section takes up available space */
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button-straight {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .hero-section-straight {
+        flex-direction: column;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .cta-button-straight {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button-straight {
+        font-size: 0.9rem;
+        padding: 0.5rem 1.2rem;
+    }
+}
+
+/* Testimonial Section Styles */
+.preview-testimonial {
+    background-color: #FFC107;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Contact Section Styles */
+.preview-contact {
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Component Wrapper Styles */
+.component-wrapper {
+    margin-bottom: 20px; /* Adjust the value as needed to control the spacing */
+    padding: 10px; /* Optional: Add some padding around each component */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    /* Optional: Add a background color */
+}
+
+/* Upper Section Styles */
+
+.upper {
+    background-color: black;
+    height: 80px;
+    display: flex; /* Use flex to align items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /*Add some padding */
+    position: relative; /* Ensure child elements are positioned relative to this container*/
+  
+}
+
+.image img {
+    width: 130px;
+    height: 100px;
+    padding-top: 20px;
+    margin-right: 20px; /* Adjust margin to create space between image and button */
+}
+
+.head {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  
+}
+
+.dropbtn {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Prevent button text from wrapping */
+    margin-left: 720px;
+}
+
+.dropbtn:hover {
+    background-color: #444;
+}
+
+/* Dropdown Content Styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000; /* Ensure it's above other content */
+    border-radius: 5px;
+    top: 90%; /* Position below the button */
+    right: 0px; /* Align with the left edge of the button container */
+    margin-top: 5px; /* Space between button and dropdown */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Dropdown Links Styles */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+/* Show Dropdown Content on Hover */
+.button:hover .dropdown-content {
+    display: block;
+}
+
+.button:hover .dropbtn {
+    background-color: #444;
+}
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+ /* .dark-mode-button{
+    position: absolute;
+    right: 170px;
+    width: 100px;
+    height: 40px;
+}  */
+
+.navbar.dark-mode,
+.sidebar.dark-mode,
+.preview-screen.dark-mode,
+.preview-content.dark-mode,
+.hero-section-alt.dark-mode,
+.hero-section-straight.dark-mode,
+.preview-testimonial.dark-mode,
+.preview-contact.dark-mode,
+.component-wrapper.dark-mode,
+.upper.dark-mode {
+    background-color: #333;
+    color: #ffffff;
+}
+
+/* Add dark mode styles for specific elements */
+.navbar.dark-mode .nav-links a,
+.navbar.dark-mode .nav-button {
+    color: #ffffff;
+}
+
+/* Adjust button style in dark mode */
+.dark-mode .dropbtn,
+.dark-mode .dropdown-content {
+    background-color: #444;
+    color: white;
+}
+.dark-mode.head{
+    color: white;
+}
+.contact-header h1 .dark-mode{
+    color: black;
+}
+.contact-form .dark-mode{
+    color: black;
+}
+/* Adjust other elements as needed */
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .upper {
+        height: auto;
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the start of the container */
+        overflow: visible; /* Allow overflow on small screens */
+    }
+
+    .button {
+        width: 100%; /* Make button take full width on small screens */
+        margin-top: 10px;
+        text-align: center; /* Center text on small screens */
+    }
+
+    .dropbtn {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        min-width: 100%; /* Ensure dropdown takes full width on small screens */
+        left: 0; /* Align with the left edge of the button container */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .cta-button-alt {
+        font-size: 0.9rem;
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .navbar .nav-button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar ul li button {
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* Content */
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    /* Preview Screen */
+    .preview-screen {
+        padding: 10px;
+    }
+
+    .preview-content {
+        max-width: 100%;
+    }
+
+    /* Hero Section */
+    .hero-section-alt {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .cta-button-alt {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    /* Testimonial Section */
+    .preview-testimonial {
+        padding: 15px;
+    }
+
+    /* Contact Section */
+    .preview-contact {
+        padding: 15px;
+    }
+
+    /* Dropdown button full width */
+    .dropbtn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Screens smaller than 480px */
+@media (max-width: 480px) {
+    /* Navbar */
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar .title {
+        font-size: 18px;
+    }
+
+    /* Hero Section */
+    .hero-section-alt {
+        padding: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button-alt {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    /* Testimonial Section */
+    .preview-testimonial {
+        padding: 10px;
+    }
+
+    /* Contact Section */
+    .preview-contact {
+        padding: 10px;
+    }
+}
+/* contact 3 */
+.contact-container {
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+max-width: 1000px;
+width: 100%;
+padding: 20px;
+}
+
+.contact-header {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.contact-header h1 {
+font-size: 28px;
+margin-bottom: 10px;
+color: #121212;
+}
+
+.contact-info, .contact-form {
+width: 90%;
+margin-bottom: 20px;
+}
+
+.contact-info iframe {
+width: 105%;
+height: 300px;
+border: 0;
+border-radius: 5px;
+}
+
+.contact-form {
+background-color: #f9f9f9;
+padding: 20px;
+border-radius: 10px;
+box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+color: black;
+}
+
+.contact-form .form-group {
+display: flex;
+justify-content: space-between;
+margin-bottom: 15px;
+}
+
+.contact-form .form-group label {
+flex-basis: 20%;
+padding-top: 10px;
+}
+
+.contact-form .form-group input, .contact-form .form-group textarea {
+flex-basis: 75%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.contact-form .form-group textarea {
+resize: none;
+height: 100px;
+}
+
+.contact-form button {
+width: 100%;
+padding: 10px;
+background-color: #ff4081;
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+
+.contact-form button:hover {
+background-color: #e0356a;
+}
+
+@media (max-width: 768px) {
+.contact-form .form-group {
+flex-direction: column;
+}
+
+.contact-form .form-group label, .contact-form .form-group input, .contact-form .form-group textarea {
+flex-basis: 100%;
+}
+}
